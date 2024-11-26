@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matteo Ratto - Portfolio</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/topo.png" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta property="og:title" content="Matteo Ratto - Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Frontend Developer specializzato in React e tecnologie web moderne. Portfolio professionale con progetti e competenze."
+    />
+    <meta
+      property="og:image"
+      content="https://matteratto.github.io/my-portfolio/images/miaFoto.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://matteratto.github.io/my-portfolio/"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">MR</div>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#progetti" class="nav-link">Progetti</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contatti" class="nav-link">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <section id="home" class="hero">
+        <div class="profile-container">
+          <div class="profile-image-wrapper">
+            <div class="cv-indicator">
+              <img
+                src="images/nuvoletta.svg"
+                alt="nuvoletta"
+                class="cloud-icon"
+              />
+              <span>Clicca per vedere il mio CV :)</span>
+            </div>
+            <div class="profile-image">
+              <a href="cv.html" target="_blank">
+                <img src="images/miaFoto.jpg" alt="Matteo Ratto" />
+              </a>
+            </div>
+          </div>
+          <div class="profile-text">
+            <h1 class="glitch" data-text="Matteo Ratto">Matteo Ratto</h1>
+            <h2 class="subtitle">Frontend Developer</h2>
+            <p class="description">
+              Ciao! Sono un Frontend Developer di 23 anni appassionato di
+              tecnologia e design. Mi specializzo nella creazione di interfacce
+              web moderne e intuitive, con particolare attenzione all'esperienza
+              utente e alle performance. Ho esperienza con React, Next.js e le
+              più recenti tecnologie frontend. Mi piace combinare creatività e
+              funzionalità per creare soluzioni web che non solo sembrano belle,
+              ma sono anche efficienti e facili da usare. Sono sempre alla
+              ricerca di nuove sfide e opportunità per imparare e crescere
+              professionalmente.
+            </p>
+            <div class="cta-buttons">
+              <a href="#progetti" class="cta-button">Vedi Progetti</a>
+              <a href="#contatti" class="cta-button secondary">Contattami</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="progetti" class="projects">
+        <h2 class="section-title">Progetti</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image"></div>
+            <h3>Progetto 1</h3>
+            <p>Descrizione del progetto con tecnologie utilizzate</p>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image"></div>
+            <h3>Progetto 2</h3>
+            <p>Descrizione del progetto con tecnologie utilizzate</p>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image"></div>
+            <h3>Progetto 3</h3>
+            <p>Descrizione del progetto con tecnologie utilizzate</p>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>Frontend Development</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3/Tailwind</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <span>JavaScript/TypeScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React/Next.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Backend & Database</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-java"></i>
+                <span>Java</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-php"></i>
+                <span>PHP</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>SQL/NoSQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-server"></i>
+                <span>Supabase</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Tools & Other</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git/GitHub</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-wordpress"></i>
+                <span>WordPress/Elementor</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Python/Pandas</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-network-wired"></i>
+                <span>Networking</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <img
+                  src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/it.svg"
+                  class="flag-icon"
+                  alt="Italian flag"
+                />
+                <span>Italian (Native)</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/gb.svg"
+                  class="flag-icon"
+                  alt="UK flag"
+                />
+                <span>English (Advanced)</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/fr.svg"
+                  class="flag-icon"
+                  alt="French flag"
+                />
+                <span>French (Intermediate)</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/es.svg"
+                  class="flag-icon"
+                  alt="Spanish flag"
+                />
+                <span>Spanish (Basic)</span>
+              </div>
+              <div class="skill-item">
+                <img
+                  src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ru.svg"
+                  class="flag-icon"
+                  alt="Russian flag"
+                />
+                <span>Russian (Basic)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contatti" class="contact">
+        <h2 class="section-title">Contattami</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-cards">
+              <div class="contact-card">
+                <i class="fab fa-linkedin"></i>
+                <h3>LinkedIn</h3>
+                <p>Contattami per opportunità professionali</p>
+                <a
+                  href="https://www.linkedin.com/in/matteo-ratto-b7b0502b0/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-button"
+                >
+                  Collegati su LinkedIn
+                </a>
+              </div>
+
+              <div class="contact-card">
+                <i class="fab fa-github"></i>
+                <h3>GitHub</h3>
+                <p>Esplora i miei progetti</p>
+                <a
+                  href="https://github.com/MatteRatto"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-button"
+                >
+                  Visita GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="privacy-notice">
+          <p>
+            © 2024 Matteo Ratto. Tutti i diritti riservati. | Visualizzando
+            questo portfolio accetti la mia
+            <a href="privacy.html" class="privacy-link"
+              >Informativa sulla Privacy e Tutela dei Dati Personali</a
+            >. L'uso non autorizzato dei miei dati personali sarà perseguito
+            legalmente.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

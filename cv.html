@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Matteo Ratto</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="googlebot" content="noindex, follow" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f0f8ff;
+        padding: 20px;
+      }
+
+      .cv-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 20px;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .sidebar {
+        background-color: #f0f8ff;
+        padding: 20px;
+      }
+
+      .main-content {
+        padding: 20px;
+      }
+
+      .profile-img {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .header h1 {
+        color: #2c3e50;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+
+      .birth-date {
+        color: #666;
+        margin-bottom: 30px;
+      }
+
+      .section {
+        margin-bottom: 25px;
+      }
+
+      .section-title {
+        color: #2c3e50;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 5px;
+      }
+
+      .contact-info {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      }
+
+      .contact-info p {
+        color: #2c3e50;
+        margin-bottom: 15px;
+        font-size: 0.95em;
+      }
+
+      .contact-link {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #2c3e50;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        background: #f8f9fa;
+      }
+
+      .contact-link:hover {
+        background: #e9ecef;
+        transform: translateY(-2px);
+      }
+
+      .contact-link i {
+        margin-right: 10px;
+        width: 20px;
+        color: #3498db;
+      }
+
+      .contact-button {
+        display: inline-block;
+        width: 100%;
+        padding: 12px 20px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        text-align: center;
+        margin: 10px 0;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        box-shadow: 0 2px 4px rgba(52, 152, 219, 0.2);
+      }
+
+      .contact-button:hover {
+        background-color: #2980b9;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+      }
+
+      .contact-note {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 15px;
+        padding: 12px;
+        background: #f8f9fa;
+        border-radius: 6px;
+        border-left: 3px solid #3498db;
+      }
+
+      .location {
+        display: flex;
+        align-items: center;
+        color: #666;
+        margin-top: 15px;
+        padding: 10px;
+        background: #f8f9fa;
+        border-radius: 6px;
+      }
+
+      .location i {
+        margin-right: 10px;
+        color: #3498db;
+      }
+
+      .languages ul {
+        list-style: none;
+      }
+
+      .languages li {
+        margin-bottom: 8px;
+        padding: 8px;
+        background: #f8f9fa;
+        border-radius: 4px;
+      }
+
+      .experience-item {
+        margin-bottom: 20px;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 8px;
+      }
+
+      .experience-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #2c3e50;
+      }
+
+      .experience-date {
+        color: #666;
+        font-size: 0.9em;
+        margin-bottom: 10px;
+      }
+
+      .experience-details {
+        margin-left: 20px;
+      }
+
+      .experience-details li {
+        margin-bottom: 8px;
+        line-height: 1.4;
+      }
+
+      @media (max-width: 768px) {
+        .cv-container {
+          grid-template-columns: 1fr;
+        }
+
+        .sidebar {
+          padding: 15px;
+        }
+
+        .profile-img {
+          max-width: 150px;
+          margin: 0 auto 20px;
+          display: block;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="cv-container">
+      <div class="sidebar">
+        <img src="images/miaFoto.jpg" alt="Matteo Ratto" class="profile-img" />
+
+        <div class="section">
+          <h2 class="section-title">Contatti</h2>
+          <div class="contact-info">
+            <p>Disponibile tramite i seguenti canali professionali:</p>
+
+            <a
+              href="https://www.linkedin.com/in/matteo-ratto-b7b0502b0/"
+              target="_blank"
+              class="contact-link"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+
+            <a
+              href="https://github.com/MatteRatto"
+              target="_blank"
+              class="contact-link"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
+
+            <a
+              href="https://matteratto.github.io/my-portfolio/#contatti"
+              class="contact-button"
+            >
+              <i class="fas fa-envelope"></i> Contattami
+            </a>
+
+            <div class="contact-note">
+              <i class="fas fa-info-circle"></i> I dati di contatto completi
+              verranno forniti durante il processo di selezione
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">Profilo</h2>
+          <p>
+            Appassionato di tecnologia con una formazione specializzata nel
+            settore IT. La mia curiosità innata mi spinge a esplorare
+            costantemente nuovi orizzonti digitali, trasformando le sfide in
+            opportunità di crescita. Creativo e innovativo, combino entusiasmo e
+            competenze tecniche con ottime capacità comunicative e
+            organizzative. Ambizioso e sempre pronto ad apprendere, punto a
+            contribuire a progetti all'avanguardia nel mondo tech.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">Lingue</h2>
+          <ul class="languages">
+            <li>Italiano - Madrelingua</li>
+            <li>Inglese - Avanzato</li>
+            <li>Francese - Medio</li>
+            <li>Spagnolo - Base</li>
+            <li>Russo - Base</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="header">
+          <h1>Matteo Ratto</h1>
+          <div class="birth-date">Data di nascita: 29 giugno 2001</div>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">Formazione Accademica</h2>
+          <div class="experience-item">
+            <div class="experience-title">Diploma Liceo Linguistico</div>
+            <div class="experience-date">
+              Liceo Angelico Aprosio Ventimiglia(IM)
+            </div>
+            <div class="experience-date">2015-2020</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">Corso ITS</h2>
+          <div class="experience-item">
+            <div class="experience-title">
+              Tecnico Superiore Riguardante Sviluppo Web e Analisi Data
+            </div>
+            <div class="experience-date">
+              2022-2024 FERRARA-FONDAZIONE FITSTIC
+            </div>
+            <ul class="experience-details">
+              <li>
+                Sviluppo e progettazione software e applicazioni lato server e
+                lato client (Java, Javascript, PHP);
+              </li>
+              <li>
+                Basi di Data Analysis utilizzando Pandas, libreria di Python;
+              </li>
+              <li>
+                Costruzione pagine web utilizzando javascript(React)/HTML e CSS;
+              </li>
+              <li>Conoscenza generale database NoSql e linguaggio SQL;</li>
+              <li>
+                Reti e sistemi (protocolli TCP/IP, modello ISO/OSI e
+                networking);
+              </li>
+              <li>Basi di cybersicurezza</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">Esperienze Lavorative</h2>
+          <div class="experience-item">
+            <div class="experience-title">Giunti Editore - IT Department</div>
+            <div class="experience-date">Aprile 2024 - Ottobre 2024</div>
+            <ul class="experience-details">
+              <li>
+                Utilizzo di JavaScript, React, Next.js e Supabase per progetti
+                di sviluppo web.
+              </li>
+              <li>
+                Collaborazione con il team IT per migliorare e mantenere i
+                sistemi aziendali utilizzando Git e GitHub.
+              </li>
+              <li>
+                Creazione dei sito per le analitiche di Giunti utilizzando
+                React,Typescript e Tailwind.
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-title">IBS Technology, Valencia</div>
+            <div class="experience-date">Maggio 2023 - Agosto 2023</div>
+            <ul class="experience-details">
+              <li>
+                Lavoro con WordPress e Elementor per la gestione e lo sviluppo
+                dei siti web.
+              </li>
+              <li>
+                Miglioramento delle competenze linguistiche e professionali in
+                un contesto internazionale.
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-title">Carrefour, Bordighera (IM)</div>
+            <div class="experience-title">Impiegato Notturno</div>
+            <ul class="experience-details">
+              <li>
+                Preparazione delle spese online e controllo delle scadenze dei
+                prodotti.
+              </li>
+              <li>Gestione della cassa e chiusura dei conti della giornata.</li>
+              <li>
+                Dimostrazione di impegno, motivazione, capacità di ascolto e
+                propensione al lavoro di gruppo.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
